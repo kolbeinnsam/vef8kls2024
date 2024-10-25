@@ -1,5 +1,7 @@
+import { isString } from "./helpers";
+
 export function longest(str) {
-  if (typeof str !== 'string') {
+  if (!isString(str)) {  // Notum isString fallið hér
     return null;
   }
 
@@ -12,4 +14,5 @@ export function longest(str) {
   }
   return longestWord;
 }
+
 
