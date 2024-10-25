@@ -8,6 +8,7 @@
     "copy:html": "cpy ./*.html ./build/",
     "copy:js": "cpy ./*.js ./build/",
     "copy:css": "cpy ./*.css ./build/",
+    "copy:libjs": "cpy ./lib/*.js ./build/lib/",
     "build": "concurrently npm:copy:* npm:lint"
   },
   "keywords": [],
