@@ -14,7 +14,6 @@ function removeHidden(el) {
   el.classList.remove('hidden');
 }
 
-
 function analyzeText(inputString) {
   // Strengjagreining
   const longestWord = longest(inputString);
@@ -56,11 +55,11 @@ function inputHandler(event) {
 const formElement = document.querySelector('form');
 formElement.addEventListener('submit', submitHandler);
 
-// Event listener fyrir rauntíma 
+// Event listener fyrir rauntíma
 const textareaElement = document.querySelector('textarea');
 textareaElement.addEventListener('input', inputHandler);
 
-// Imports fyrir hjálparföll 
+// Imports fyrir hjálparföll
 import { isString, splitOnWhitespace } from './lib/helpers.js';
 import { longest } from './lib/longest.js';
 import { shortest } from './lib/shortest.js';
@@ -69,7 +68,7 @@ import { vowels } from './lib/vowels.js';
 import { consonants } from './lib/consonants.js';
 import { isPalindrome } from './lib/palindrome.js';
 
-// Prófanir 
+// Prófanir
 const test = isString('hæ');
 console.log('test er strengur?', test);
 
